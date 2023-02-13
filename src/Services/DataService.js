@@ -42,7 +42,7 @@ async function FetchReverse(phrase){
 
 async function FetchDirectory(info){
     const res = await fetch(`https://afoday2carlos.azurewebsites.net/studentdirectory/getstudentbyinfo/${info}`);
-    const data = await res.text();
+    const data = await res.json();
     return data
 }
 
